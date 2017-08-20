@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#1A237E"
+        tools:context="com.example.android.patriotsquiz.MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="24sp"
+            android:textColor="#F44336"
+            android:layout_margin="8dp"
+            android:text="Let's test those Patriots skills..." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/question_style"
+            android:text="Who is the G.O.A.T.?" />
+
+        <EditText
+            android:id="@+id/goat_tom_brady"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/question_style"
+            android:text="How many Super Bowl championships have the New England Patriots won?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/two_super_bowls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/answer_style"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/three_super_bowls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/answer_style"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/five_super_bowls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/answer_style"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/question_style"
+            android:text="What school did Bill Belichick attend?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/school_colgate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/answer_style"
+                android:text="Colgate University" />
+
+            <RadioButton
+                android:id="@+id/school_Columbia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/answer_style"
+                android:text="Columbia University" />
+
+            <RadioButton
+                android:id="@+id/school_wesleyan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/answer_style"
+                android:text="Wesleyan University" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/question_style"
+            android:text="Which players were on the 2017 Super Bowl team?" />
+
+        <CheckBox
+            android:id="@+id/player_edelman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/answer_style"
+            android:text="Julian Edelman" />
+
+        <CheckBox
+            android:id="@+id/player_gronkowski"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/answer_style"
+            android:text="Rob Gronkowski" />
+
+        <CheckBox
+            android:id="@+id/player_cooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/answer_style"
+            android:text="Brandin Cooks" />
+
+        <CheckBox
+            android:id="@+id/player_butler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/answer_style"
+            android:text="Malcom Butler" />
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#F44336"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="submitTest" />
+
+    </LinearLayout>
+
+</ScrollView>
